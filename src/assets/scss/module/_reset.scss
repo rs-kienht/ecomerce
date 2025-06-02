@@ -1,0 +1,153 @@
+@use "variables" as *;
+@use "mixins" as *;
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+pre,
+em,
+img,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+body {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  & {
+    color: $color-black;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+p,
+ul,
+ol,
+dl,
+input,
+textarea,
+ul li p,
+ul li dl,
+ol li p,
+ol li dl,
+table p,
+table ul,
+dl dd p,
+dl dd ul,
+ul ul,
+dl table,
+table table,
+ul table,
+ol ul,
+dl h2,
+dl h3,
+dl ol,
+ul ol {
+  font-size: 100%;
+}
+article,
+aside,
+details,
+figcaption,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+ul li,
+ol li,
+nav ul {
+  list-style: none;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  line-height: 1.4;
+}
+em,
+strong {
+  font-weight: bold;
+}
+input,
+select {
+  vertical-align: middle;
+}
+button:focus {
+  outline: 0;
+}
+
+button:hover,
+a:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

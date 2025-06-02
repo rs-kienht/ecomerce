@@ -1,0 +1,51 @@
+// ------------------------------------------------------------
+// variables
+// ------------------------------------------------------------
+
+// Responsive breakpoints
+$xs: 390px;
+$sm: 650px;
+$md: 768px;
+$pc: 1030px;
+$lg: 1440px;
+$xl: 1600px;
+$rentina: 1920px;
+
+$xsi: 390;
+$smi: 650;
+$bp: 768;
+$mid: 1030;
+$lgi: 1440;
+$xli: 1600;
+$rentinai: 1920;
+
+$xlinner: 1034;
+$xlmax: 2000;
+
+// Container
+$container-pc: 1240;
+
+// Paddings
+$padding-x-sp: 16;
+$padding-x-tl: $padding-x-sp * 1.5;
+
+// Colors
+// ------------------------------------------------------------
+$color-black: #000000;
+$color-white: #ffffff;
+$color-gray-1: #333333;
+$color-gray-2: #f0f0f0;
+$color-gray-3: #666666;
+
+// Color with opacity
+// ------------------------------------------------------------
+$color-black-opacity-1: rgba(0, 0, 0, 0.1);
+$color-black-opacity-4: rgba(0, 0, 0, 0.4);
+$color-black-opacity-6: rgba(0, 0, 0, 0.6);
+
+// Font sizes
+// ------------------------------------------------------------
+$fz-base-px: 16;
+
+$font-satoshi: "Satoshi", sans-serif;
+$font-integral-cf: "Integral CF", sans-serif;

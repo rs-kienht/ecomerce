@@ -1,0 +1,13 @@
+// @use 'module' as *;
+
+// h1 {
+//     background-color: $color-bg-black;
+//     color: $color-white;
+//     text-align: center;
+//     padding-top: calc-percent(300px, $pc);
+//     @include responsive-font(get-vw(32px), 20px, 32px);
+//     @include max-screen($md) {
+//         color: red;
+//         @include responsive-font(get-vw-sp(32px), 20px, 32px);
+//     }
+// }

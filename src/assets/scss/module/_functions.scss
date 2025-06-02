@@ -1,0 +1,39 @@
+// ------------------------------------------------------------
+// functions
+// ------------------------------------------------------------
+
+// stripUnit
+// ------------------------------------------------------------
+// 引数に単位が付いている場合は単位を除去して数値のみ返却する
+//
+// @param {number|length} $num - 数値のみ返却してほしい値
+// @return {number}     - 引数を数値のみに変換した値
+@function stripUnit($num) {
+  @if type-of($num) == 'number' and not unitless($num) {
+    @return $num / ($num * 0 + 1);
+  }
+
+  @return $num;
+}
+
+// toPx
+// ------------------------------------------------------------
+// 単位がない数値に px を付ける
+//
+// @param {number} $num - 単位なしの値
+// @return {length}     - 引数に px を追加した値
+@function -px($num) {
+  @return $num * 1px;
+}
+
+
+// toRem
+// ------------------------------------------------------------
+// 数値をpxとして扱いremに変換
+//
+// @param {number} $size
+// @return {length} - 引数を px -> rem に変換した値
+@function -rem($size, $base: $fz-base-px){
+  $size: stripUnit($size);
+  @return ($size / $base) * 1rem;
+}

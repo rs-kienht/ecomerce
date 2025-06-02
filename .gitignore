@@ -1,0 +1,15 @@
+/.idea/
+.svn/
+_svn/
+_notes/
+node_modules/
+.sass-cache/
+
+.env
+*.map
+!.gitkeep
+
+.DS_Store
+Thumbs.db
+.idea/
+yarn.lock
