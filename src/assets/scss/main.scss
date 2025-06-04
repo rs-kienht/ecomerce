@@ -696,7 +696,6 @@ h2 {
   &__info {
     margin-bottom: 15px;
     max-width: 248px;
-    margin-right: calc-percent(113, $container-pc)
   }
   &__logo {
     font-size: 33px;
@@ -818,7 +817,9 @@ h2 {
     border-bottom: 1px solid #0000001A;
   }
   &__wrap-menu-list {
+    width: 72.419354838%;
     display: flex;
+    justify-content: space-between;
     @media (min-width: 1240px) {
       gap: 113px;
     }
@@ -838,6 +839,44 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 25px;
+  }
+}
+.reviews {
+  display: flex;
+  gap: 20px;
+  &__next-pre {
+    display: flex;
+    gap: 16px;
+    button {
+      all: unset;
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+  &__header {
+    margin-bottom: 40px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item {
+    border: 1px solid #0000001A;
+    border-radius: 20px;
+    min-width: 400px;
+    padding: 28px 32px;
+  }
+  &__name {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.1;
+    color: #000000;
+    gap: 6px;
+  }
+  &__title  {
+    text-align: left;
   }
 }
 .title {
