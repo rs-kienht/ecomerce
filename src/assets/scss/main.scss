@@ -572,6 +572,32 @@ h2 {
 .products {
   &__stat-text {
     font-size: 14px;
+    line-height: 1.35714285714;
+    @media (min-width: 1240px) {
+      margin-left: 13px;
+    }
+    @media (min-width: 769px) and (max-width: 1239px) {
+      margin-left: 4.406779661%
+    }
+  }
+  &__price-discount {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.33333333333;
+    color: #00000066;
+    text-decoration: line-through;
+  }
+  &__price-percent {
+    background-color: #FF33331A;
+    padding: 6px 13px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.33333333333;
+    color: #FF3333;
+    border-radius: 62px;
+  }
+  &__stat-text {
+    font-size: 14px;
     margin-left: 13px;
     color: #000000;
   }
@@ -593,18 +619,26 @@ h2 {
     gap: calc-percent(20, $container-pc);
   }
   &__name {
+    text-transform: capitalize;
     margin-top: 16px;
     font-family: $font-satoshi;
     font-weight: 700;
     color: #000000;
     font-size: 20px;
+    @media (min-width: 769px) and (max-width: 1024px) {
+      min-height: 50px;
+    }
   }
   &_price {
+    display: flex;
     margin-top: 8px;
     font-family: $font-satoshi;
     font-weight: 700;
     font-size: 24px;
     color: #000000;
+    line-height: 1.33333333333;
+    gap: 10px;
+    flex-wrap: wrap;
   }
   &__view-all {
     border: 1px solid #0000001A;
@@ -660,6 +694,7 @@ h2 {
     color: #00000099;
   }
   &__info {
+    margin-bottom: 15px;
     max-width: 248px;
     margin-right: calc-percent(113, $container-pc)
   }
@@ -744,6 +779,12 @@ h2 {
       width: 62.21033868%;
     }
   }
+  &__items {
+    font-size: 16px;
+    line-height: 1.1875;
+    letter-spacing: 0px;
+    color: #00000099;
+  }
   &__right {
     flex-direction: column;
     display: flex;
@@ -755,12 +796,35 @@ h2 {
       width: 50.449640288%;
     }
   }
+  &__copy {
+    color: #00000099;
+    font-size: 14px;
+  }
+  &__copy-payment {
+    margin-top: 25px;
+    margin-bottom: 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__payment {
+    display: flex;
+  }
   &__wrap-all {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #0000001A;
   }
   &__wrap-menu-list {
     display: flex;
-    gap: 113px;
+    @media (min-width: 1240px) {
+      gap: 113px;
+    }
+    @media (min-width: 769px) and (max-width: 1239px) {
+      gap: 13.363028953%;
+    }
   }
   &__menu-items-text {
     font-weight: 500;
