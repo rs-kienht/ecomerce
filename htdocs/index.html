@@ -102,8 +102,8 @@
 		<section class="products">
 			<div class="inner products__arrivals">
 				<h2 class="title">NEW ARRIVALS</h2>
-				<ul class="products__list">
-					<li>
+				<ul class="products__list" id="products-arrivals">
+					<li class="products__items-clothes">
 						<a href="#" class="products__item">
 							<figure>
 								<img src="assets/images/Product1.png" alt="Product1">
@@ -120,7 +120,7 @@
 							<p class="products_price">$120</p>
 						</a>
 					</li>
-					<li>
+					<li class="products__items-clothes">
 						<a href="#" class="products__item">
 							<figure>
 								<img src="assets/images/Product2.png" alt="Product2">
@@ -138,7 +138,7 @@
 									class="products__price-percent">-20%</span></p>
 						</a>
 					</li>
-					<li>
+					<li class="products__items-clothes">
 						<a href="#" class="products__item">
 							<figure>
 								<img src="assets/images/Product3.png" alt="Product3">
@@ -155,7 +155,7 @@
 							<p class="products_price">$180</p>
 						</a>
 					</li>
-					<li>
+					<li class="products__items-clothes">
 						<a href="#" class="products__item">
 							<figure>
 								<img src="assets/images/Product4.png" alt="Product4">
@@ -177,10 +177,10 @@
 				</ul>
 				<button class="products__view-all">View All</button>
 			</div>
+			<h2 class="title products__border">TOP SELLING</h2>
 			<div class="inner products__selling">
-				<h2 class="title">TOP SELLING</h2>
-				<ul class="products__list">
-					<li>
+				<ul class="products__list" id="products-selling">
+					<li class="products__items-clothes">
 						<a href="#" class="products__item">
 							<figure>
 								<img src="assets/images/Product5.png" alt="VERTICAL STRIPED SHIRT">
@@ -197,7 +197,7 @@
 							<p class="products_price">$212</p>
 						</a>
 					</li>
-					<li>
+					<li class="products__items-clothes">
 						<a href="#" class="products__item">
 							<figure>
 								<img src="assets/images/Product6.png" alt="COURAGE GRAPHIC T-SHIRT">
@@ -213,7 +213,7 @@
 							<p class="products_price">$145</p>
 						</a>
 					</li>
-					<li>
+					<li class="products__items-clothes">
 						<a href="#" class="products__item">
 							<figure>
 								<img src="assets/images/Product7.png" alt="LOOSE FIT BERMUDA SHORTS">
@@ -228,7 +228,7 @@
 							<p class="products_price">$80</p>
 						</a>
 					</li>
-					<li>
+					<li class="products__items-clothes">
 						<a href="#" class="products__item">
 							<figure>
 								<img src="assets/images/Product8.png" alt="FADED SKINNY JEANS">
@@ -279,7 +279,7 @@
 			</div>
 		</section>
 		<div class="inner reviews__header">
-			<h2 class="title reviews__title">BROWSE BY dress STYLE</h2>
+			<h2 class="title reviews__title">OUR HAPPY CUSTOMERS</h2>
 			<p class="reviews__next-pre">
 				<button id="prevBtn">
 					<img src="assets/images/previous.svg" alt="Previous Icon">
@@ -289,212 +289,214 @@
 				</button>
 			</p>
 		</div>
-		<section class="reviews" id="promotion-slider">
-			<div class="reviews__item">
-				<p class="products_stat">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-				</p>
-				<p class="reviews__name">Sarah M.
-					<img class="reviews__check" src="assets/images/Check.png" alt="check icon">
-				</p>
-				<p class="reviews__feedback">
-					"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
-					upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
-					trends.”
-				</p>
+		<div class="reviews__list">
+			<div class="reviews" id="promotion-slider">
+				<div class="reviews__item">
+					<p class="products_stat">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+					</p>
+					<p class="reviews__name">Sarah M.
+						<img class="reviews__check" src="assets/images/Check.png" alt="check icon">
+					</p>
+					<p class="reviews__feedback">
+						"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
+						upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
+						trends.”
+					</p>
+				</div>
+				<div class="reviews__item">
+					<p class="products_stat">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+					</p>
+					<p class="reviews__name">Sarah M.
+						<img class="reviews__check" src="assets/images/Check.png" alt="check icon">
+					</p>
+					<p class="reviews__feedback">
+						"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
+						upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
+						trends.”
+					</p>
+				</div>
+				<div class="reviews__item">
+					<p class="products_stat">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+					</p>
+					<p class="reviews__name">Sarah M.
+						<img class="reviews__check" src="assets/images/Check.png" alt="check icon">
+					</p>
+					<p class="reviews__feedback">
+						"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
+						upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
+						trends.”
+					</p>
+				</div>
+				<div class="reviews__item">
+					<p class="products_stat">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+					</p>
+					<p class="reviews__name">Sarah M.
+						<img class="reviews__check" src="assets/images/Check.png" alt="check icon">
+					</p>
+					<p class="reviews__feedback">
+						"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
+						upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
+						trends.”
+					</p>
+				</div>
+				<div class="reviews__item">
+					<p class="products_stat">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+					</p>
+					<p class="reviews__name">Sarah M.
+						<img class="reviews__check" src="assets/images/Check.png" alt="check icon">
+					</p>
+					<p class="reviews__feedback">
+						"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
+						upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
+						trends.”
+					</p>
+				</div>
+				<div class="reviews__item">
+					<p class="products_stat">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+					</p>
+					<p class="reviews__name">Sarah M.
+						<img class="reviews__check" src="assets/images/Check.png" alt="check icon">
+					</p>
+					<p class="reviews__feedback">
+						"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
+						upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
+						trends.”
+					</p>
+				</div>
+				<div class="reviews__item">
+					<p class="products_stat">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+					</p>
+					<p class="reviews__name">Sarah M.
+						<img class="reviews__check" src="assets/images/Check.png" alt="check icon">
+					</p>
+					<p class="reviews__feedback">
+						"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
+						upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
+						trends.”
+					</p>
+				</div>
+				<div class="reviews__item">
+					<p class="products_stat">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+					</p>
+					<p class="reviews__name">Sarah M.
+						<img class="reviews__check" src="assets/images/Check.png" alt="check icon">
+					</p>
+					<p class="reviews__feedback">
+						"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
+						upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
+						trends.”
+					</p>
+				</div>
+				<div class="reviews__item">
+					<p class="products_stat">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+					</p>
+					<p class="reviews__name">Sarah M.
+						<img class="reviews__check" src="assets/images/Check.png" alt="check icon">
+					</p>
+					<p class="reviews__feedback">
+						"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
+						upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
+						trends.”
+					</p>
+				</div>
+				<div class="reviews__item">
+					<p class="products_stat">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+					</p>
+					<p class="reviews__name">Sarah M.
+						<img class="reviews__check" src="assets/images/Check.png" alt="check icon">
+					</p>
+					<p class="reviews__feedback">
+						"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
+						upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
+						trends.”
+					</p>
+				</div>
+				<div class="reviews__item">
+					<p class="products_stat">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+					</p>
+					<p class="reviews__name">Sarah M.
+						<img class="reviews__check" src="assets/images/Check.png" alt="check icon">
+					</p>
+					<p class="reviews__feedback">
+						"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
+						upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
+						trends.”
+					</p>
+				</div>
+				<div class="reviews__item">
+					<p class="products_stat">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+						<img src="assets/images/Star_1.png" alt="Star">
+					</p>
+					<p class="reviews__name">Sarah M.
+						<img class="reviews__check" src="assets/images/Check.png" alt="check icon">
+					</p>
+					<p class="reviews__feedback">
+						"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
+						upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
+						trends.”
+					</p>
+				</div>
 			</div>
-			<div class="reviews__item">
-				<p class="products_stat">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-				</p>
-				<p class="reviews__name">Sarah M.
-					<img class="reviews__check" src="assets/images/Check.png" alt="check icon">
-				</p>
-				<p class="reviews__feedback">
-					"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
-					upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
-					trends.”
-				</p>
-			</div>
-			<div class="reviews__item">
-				<p class="products_stat">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-				</p>
-				<p class="reviews__name">Sarah M.
-					<img class="reviews__check" src="assets/images/Check.png" alt="check icon">
-				</p>
-				<p class="reviews__feedback">
-					"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
-					upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
-					trends.”
-				</p>
-			</div>
-			<div class="reviews__item">
-				<p class="products_stat">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-				</p>
-				<p class="reviews__name">Sarah M.
-					<img class="reviews__check" src="assets/images/Check.png" alt="check icon">
-				</p>
-				<p class="reviews__feedback">
-					"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
-					upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
-					trends.”
-				</p>
-			</div>
-			<div class="reviews__item">
-				<p class="products_stat">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-				</p>
-				<p class="reviews__name">Sarah M.
-					<img class="reviews__check" src="assets/images/Check.png" alt="check icon">
-				</p>
-				<p class="reviews__feedback">
-					"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
-					upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
-					trends.”
-				</p>
-			</div>
-			<div class="reviews__item">
-				<p class="products_stat">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-				</p>
-				<p class="reviews__name">Sarah M.
-					<img class="reviews__check" src="assets/images/Check.png" alt="check icon">
-				</p>
-				<p class="reviews__feedback">
-					"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
-					upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
-					trends.”
-				</p>
-			</div>
-			<div class="reviews__item">
-				<p class="products_stat">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-				</p>
-				<p class="reviews__name">Sarah M.
-					<img class="reviews__check" src="assets/images/Check.png" alt="check icon">
-				</p>
-				<p class="reviews__feedback">
-					"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
-					upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
-					trends.”
-				</p>
-			</div>
-			<div class="reviews__item">
-				<p class="products_stat">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-				</p>
-				<p class="reviews__name">Sarah M.
-					<img class="reviews__check" src="assets/images/Check.png" alt="check icon">
-				</p>
-				<p class="reviews__feedback">
-					"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
-					upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
-					trends.”
-				</p>
-			</div>
-			<div class="reviews__item">
-				<p class="products_stat">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-				</p>
-				<p class="reviews__name">Sarah M.
-					<img class="reviews__check" src="assets/images/Check.png" alt="check icon">
-				</p>
-				<p class="reviews__feedback">
-					"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
-					upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
-					trends.”
-				</p>
-			</div>
-			<div class="reviews__item">
-				<p class="products_stat">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-				</p>
-				<p class="reviews__name">Sarah M.
-					<img class="reviews__check" src="assets/images/Check.png" alt="check icon">
-				</p>
-				<p class="reviews__feedback">
-					"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
-					upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
-					trends.”
-				</p>
-			</div>
-			<div class="reviews__item">
-				<p class="products_stat">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-				</p>
-				<p class="reviews__name">Sarah M.
-					<img class="reviews__check" src="assets/images/Check.png" alt="check icon">
-				</p>
-				<p class="reviews__feedback">
-					"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
-					upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
-					trends.”
-				</p>
-			</div>
-			<div class="reviews__item">
-				<p class="products_stat">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-					<img src="assets/images/Star_1.png" alt="Star">
-				</p>
-				<p class="reviews__name">Sarah M.
-					<img class="reviews__check" src="assets/images/Check.png" alt="check icon">
-				</p>
-				<p class="reviews__feedback">
-					"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled
-					upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest
-					trends.”
-				</p>
-			</div>
-		</section>
+		</div>
 	</main>
 	<!--#include virtual="/includes/footer.html" -->
 

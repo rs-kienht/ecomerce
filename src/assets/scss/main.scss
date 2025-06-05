@@ -32,15 +32,11 @@ h2 {
     opacity: 0.7;
     background-color: $color-gray-1;
   }
-
-  @include mqMax($md) {
+  @media (max-width: 768px) {
     width: 100%;
     text-align: center;
-    @include responsive-font(get-vw-sp(24px), 16px, 24px);
-  }
-
-  @include mqMax($xs) {
     font-size: 16px;
+    line-height: 1.375;
   }
 }
 
@@ -56,6 +52,10 @@ h2 {
     padding-left: 32px;
     padding-right:32px;
   }
+  @media (max-width: 768px) {
+    padding-left: 4.102564102%;
+    padding-right: 4.102564102%;
+  }
 
 }
 .signup {
@@ -67,15 +67,9 @@ h2 {
   justify-content: center;
   background-color: #000000;
   color: #FFFFFF;
-  
-  @include mqMax($md) {
-    padding: calc-percent(13.5, $bp) 0;
+  @media (max-width: 768px) {
+      padding: 9px 0px; 
   }
-
-  @include mqMax($xs) {
-    padding: calc-percent(11, $xsi) 0;
-  }
-
   &__wrap {
     display: flex;
     align-items: center;
@@ -91,10 +85,10 @@ h2 {
     }
   }
 
-  &__button {
-    display: inline-block !important;
-    color: $color-white !important;
-    text-decoration: underline !important;
+  &__link {
+    display: inline-block;
+    color: $color-white;
+    text-decoration: underline;
     font-weight: 500;
 
     &:hover {
@@ -149,8 +143,7 @@ h2 {
     padding: 0;
     margin-right: 16px;
     cursor: pointer;
-
-    @include mqMax($md) {
+    @media (max-width: 768px) {
       display: block;
     }
 
@@ -178,8 +171,7 @@ h2 {
 
   &__nav-list {
     margin-left: calc-percent(40, $container-pc);
-
-    @include mqMax($md) {
+    @media (max-width: 768px) {
       display: none;
     }
   }
@@ -222,11 +214,9 @@ h2 {
     background-color: $color-gray-2;
     padding: calc-percent(12, $container-pc) calc-percent(16, $container-pc);
     margin: 0 calc-percent(40, $container-pc);
-
-    @include mqMax($md) {
+    @media (max-width: 768px) {
       display: none;
     }
-
     &-icon {
       height: 24px;
     }
@@ -255,8 +245,7 @@ h2 {
 
     &-mobile {
       display: none;
-
-      @include mqMax($md) {
+      @media (max-width: 768px) {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -294,6 +283,12 @@ h2 {
 }
 
 .baner {
+  .inner {
+    @media (max-width: 768px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
   background-color: #f2f0f1;
   &__background {
     padding: 103px 0px 116px;
@@ -304,30 +299,22 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    @include mqMax($md) {
-      padding: 0px calc-percent(24, $bp);
-      padding-top: calc-percent(60, $bp);
+    @media (max-width: 768px) {
+      padding: 0px 4.102564102%;
+      padding-top: 40px;
       background-image: none;
     }
-
-    @include mqMax($xs) {
-      padding: 0px calc-percent(16, $xsi);
-      padding-top: calc-percent(40, $xsi);
-    }
-
     &-mobile {
+      background-position: bottom;
+      background-repeat: no-repeat;
+      display: none;
       width: 100%;
       max-width: $xs;
       margin: 0 auto;
       aspect-ratio: 390/448;
-      background-image: url("../images/hero-sp.png");
+      background-image: url("../images/bg-sp.png");
       background-size: contain;
-      background-position: bottom;
-      background-repeat: no-repeat;
-
-      display: none;
-
-      @include mqMax($md) {
+      @media (max-width: 768px) {
         display: block;
         margin-top: -6px;
         position: relative;
@@ -343,13 +330,10 @@ h2 {
     font-size:  64px;
     line-height: 1.3;
     margin-bottom: 32px;
-
-    @include mqMax($md) {
-      margin-bottom: calc-percent(30, $bp - $padding-x-tl * 2);
-    }
-
-    @include mqMax($xs) {
-      margin-bottom: calc-percent(20, $xsi - $padding-x-sp * 2);
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+      font-size: 36px;
+      line-height: 1.05882352941;
     }
   }
 
@@ -359,25 +343,18 @@ h2 {
     line-height: 1.375;
     max-width: calc-percent(545, $container-pc);
     font-size:  16px;
-
-    @include mqMax($md) {
+    @media (max-width: 768px) {
+      font-size: 21px;
       max-width: 100%;
-      margin-bottom: calc-percent(36, $bp - $padding-x-tl * 2);
-      @include responsive-font(get-vw-sp(21px), 14px, 21px);
-    }
-
-    @include mqMax($xs) {
-      margin-bottom: calc-percent(24, $xsi - $padding-x-sp * 2);
+      margin-bottom: 24px;
+      line-height: 1.0;;
     }
   }
 
   .btn {
     margin-bottom: 48px;
-    @include mqMax($md) {
-      margin-bottom: calc-percent(30, $bp - $padding-x-tl * 2);
-    }
-    @include mqMax($xs) {
-      margin-bottom: calc-percent(20, $xsi - $padding-x-sp * 2);
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
     }
   }
 
@@ -385,8 +362,7 @@ h2 {
     display: flex;
     position: relative;
     z-index: 1;
-
-    @include mqMax($md) {
+    @media (max-width: 768px) {
       flex-wrap: wrap;
       justify-content: center;
     }
@@ -396,16 +372,11 @@ h2 {
     width: 1px;
     background-color: $color-black-opacity-1;
     margin: 0 32px;
-
-    @include mqMax($md) {
+    @media (max-width: 768px) {
       &:nth-child(4) {
         display: none;
       }
-      margin: 0 calc-percent(27.5 * 1.5, $bp - $padding-x-tl * 2);
-    }
-
-    @include mqMax($xs) {
-      margin: 0 calc-percent(27.5, $xsi - $padding-x-sp * 2);
+      margin: 0 calc-percent(27.5 , 358);
     }
   }
 
@@ -417,9 +388,9 @@ h2 {
       font-weight: 700;
       line-height: 1.35;
       color: $color-black;
-      @include mqMax($md) {
+      @media (max-width: 768px) {
         line-height: 1.5;
-        @include responsive-font(get-vw-sp(36px), 24px, 36px);
+        font-size: 24px;
       }
     }
 
@@ -428,22 +399,17 @@ h2 {
       line-height: 1.375;
       color: $color-black-opacity-6;
       margin-top: -2px;
-
-      @include mqMax($md) {
+      @media (max-width: 768px) {
+        font-size: 12px;
         margin-top: -6px;
-        @include responsive-font(get-vw-sp(18px), 12px, 18px);
       }
     }
 
     &:nth-child(5) {
-      @include mqMax($md) {
+      @media (max-width: 768px) {
         width: 100%;
         text-align: center;
-        margin-top: calc-percent(12 * 1.5, $bp - $padding-x-tl * 2);
-      }
-
-      @include mqMax($xs) {
-        margin-top: calc-percent(12, $xsi - $padding-x-sp * 2);
+        margin-top: 12px;
       }
     }
   }
@@ -454,16 +420,14 @@ h2 {
 
     &-desktop {
       display: block;
-
-      @include mqMax($md) {
+      @media (max-width: 768px) {
         display: none;
       }
     }
 
     &-mobile {
       display: none;
-
-      @include mqMax($md) {
+      @media (max-width: 768px) {
         display: block;
       }
     }
@@ -472,8 +436,7 @@ h2 {
       width: calc-percent(104, 1440);
       top: calc-percent(86, 663);
       right: calc-percent(81, 1440);
-
-      @include mqMax($md) {
+      @media (max-width: 768px) {
         width: calc-percent(76, $xsi);
         top: calc-percent(40, 448);
         right: calc-percent(21, $xsi);
@@ -484,8 +447,7 @@ h2 {
       width: calc-percent(56, 1440);
       bottom: calc-percent(310, 663);
       right: calc-percent(634, 1440);
-
-      @include mqMax($md) {
+      @media (max-width: 768px) {
         width: calc-percent(44, $xsi);
         top: calc-percent(137, 448);
         left: calc-percent(27, $xsi);
@@ -569,6 +531,19 @@ h2 {
   }
 }
 .products {
+  .inner {
+    @media (max-width: 768px) {
+      padding-right: 0;
+    }
+  }
+  &__border {
+    @media (max-width: 768px) {
+      padding-top: 40px;
+      margin-left: 4.102564102%;
+      margin-right: 4.102564102%;
+      border-top: 1px solid #0000001A;
+    }
+  }
   &__stat-text {
     font-size: 14px;
     line-height: 1.35714285714;
@@ -578,6 +553,10 @@ h2 {
     @media (min-width: 769px) and (max-width: 1239px) {
       margin-left: 4.406779661%
     }
+    @media (max-width: 768px) {
+      font-size: 12px;
+      line-height: 1.33333333333;
+    }
   }
   &__price-discount {
     font-weight: 700;
@@ -585,8 +564,14 @@ h2 {
     line-height: 1.33333333333;
     color: #00000066;
     text-decoration: line-through;
+    @media (max-width: 768px) {
+      font-size: 20px;
+      line-height: 1.35;
+    }
   }
   &__price-percent {
+    display: flex;
+    align-items: center;
     background-color: #FF33331A;
     padding: 6px 13px;
     font-weight: 500;
@@ -594,6 +579,11 @@ h2 {
     line-height: 1.33333333333;
     color: #FF3333;
     border-radius: 62px;
+    @media (max-width: 768px) {
+      font-size: 10px;
+      line-height: 1.0;
+      padding: 3px 8px;
+    }
   }
   &__stat-text {
     font-size: 14px;
@@ -603,19 +593,42 @@ h2 {
   &__selling {
     padding-top: 64px;
     padding-bottom: 80px;
+    @media (max-width: 768px) {
+      padding-top: 30px;
+      padding-bottom: 50px;
+    }
+    .products__list {
+      margin-top: 0px;
+    }
   }
   &__arrivals {
     padding-top: 72px;
     padding-bottom: 64px;
     border-bottom: 1px solid #0000001A;
+    @media (max-width: 768px) {
+      padding-top: 50px;
+      padding-bottom: 40px;
+      border-bottom: unset;
+    }
   }
   &__item {
     text-decoration: none;
   }
+  &__items-clothes {
+    width: 25%;
+    box-sizing: border-box;
+    @media (max-width: 768px) {
+      width: 50%;
+    }
+  }
   &__list {
     margin-top: 55px;
     display: flex;
-    gap: calc-percent(20, $container-pc);
+    //gap: calc-percent(20, $container-pc);
+    @media (max-width: 768px) {
+      margin-top: 32px;
+      //gap: calc-percent(16, $container-mb);
+    }
   }
   &__name {
     text-transform: capitalize;
@@ -624,6 +637,11 @@ h2 {
     font-weight: 700;
     color: #000000;
     font-size: 20px;
+    line-height: 1.35;
+    @media (max-width: 768px) {
+      font-size: 16px;
+      line-height: 1.375
+    }
     @media (min-width: 769px) and (max-width: 1024px) {
       min-height: 50px;
     }
@@ -638,6 +656,11 @@ h2 {
     line-height: 1.33333333333;
     gap: 10px;
     flex-wrap: wrap;
+    @media (max-width: 768px) {
+      margin-top: 4px;
+      font-size: 20px;
+      line-height: 1.35;
+    }
   }
   &__view-all {
     border: 1px solid #0000001A;
@@ -652,20 +675,45 @@ h2 {
     background-color: white;
     display: block;
     margin: 36px auto 0px auto;
+    line-height: 1.375;
+    @media (max-width: 768px) {
+      width: 95.897435898%;
+      margin-top: 24px;
+      font-size: 14px;
+      line-height: 1.35714285714;
+      margin-right: 4.102564102%;
+    }
   }
 }
 .browes {
   margin-top: 80px;
+  @media (max-width: 768px) {
+    margin-top: 0px;
+  }
   &__bg {
     background-color: #F0F0F0;
     border-radius: 40px;
     padding: 70px calc-percent(64, $container-pc) 76px calc-percent(64, $container-pc);
+    @media (max-width: 768px) {
+      padding: 40px calc-percent(24, $container-mb) 27px;
+    }
   }
   &__row {
     display: flex;
     gap: 20px;
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       height: 289px; 
+    }
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      figure {
+        width: 100%;
+        height: 190px;
+      }
+      img {
+        width: 100%;
+      }
     }
     img {
       height: 100%;
@@ -676,10 +724,16 @@ h2 {
   }
   &__title {
     margin-bottom: 64px;
+    @media (max-width: 768px) {
+      margin-bottom: 28px;
+    }
   }
 }
 .footer {
   margin-top: 80px;
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
   &__social {
     display: flex;
     align-items: center;
@@ -706,6 +760,10 @@ h2 {
     background-color: #000000;
     border-radius: 20px;
     padding: 36px calc-percent(64, $container-pc);
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 32px calc-percent(64, $container-pc);
+    }
   }
   &__subscribe-text {
     font-family: $font-integral-cf;
@@ -713,6 +771,10 @@ h2 {
     font-size: 40px;
     line-height: 1.125;
     color: $color-white;
+    @media (max-width: 768px) {
+      font-size: 32px;
+      line-height: 1.09375;
+    }
     @media (min-width: 1240px) {
       width: 551px;
     }
@@ -846,6 +908,21 @@ h2 {
 .reviews {
   display: flex;
   gap: 20px;
+  &__feedback {
+    font-size: 16px;
+    line-height: 1.375;
+    color: #00000099;
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 1.42857142857;
+    }
+  }
+  &__list {
+    @media (max-width: 768px) {
+      padding-left: 4.102564102%;
+      padding-right: 4.102564102%;
+    }
+  }
   &__next-pre {
     display: flex;
     gap: 16px;
@@ -861,12 +938,20 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 768px) {
+      margin-bottom: 24px;
+      margin-top: 50px;
+    }
   }
   &__item {
     border: 1px solid #0000001A;
     border-radius: 20px;
     min-width: 400px;
     padding: 28px 32px;
+    @media (max-width: 768px) {
+      padding: 24px!important;
+      min-width: auto;
+    }
   }
   &__name {
     display: flex;
@@ -878,13 +963,18 @@ h2 {
     gap: 6px;
   }
   &__title  {
-    text-align: left;
+    text-align: left!important;
   }
 }
 .title {
   text-align: center;
   font-size: 48px;
+  line-height: 1.20833333333;
   text-transform: capitalize;
+  @media (max-width: 768px) {
+    font-size: 32px;
+    line-height: 1.1875;
+  }
 }
 .checked {
   color: #FFC633;
