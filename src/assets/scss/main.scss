@@ -781,7 +781,7 @@ h2 {
       line-height: 1.09375;
     }
     @media (min-width: 1240px) {
-      width: 551px;
+      width: calc-percent(551, 1112);
     }
     @media (min-width: 769px) and (max-width: 1239px) {
       width: 49.550359712%;
@@ -837,11 +837,8 @@ h2 {
     border-radius: 62px;
     background-color: #FFFFFF;
     padding: 12px 16px;
-    @media (min-width: 1240px) {
-      width: 349px;
-    }
-    @media (min-width: 769px) and (max-width: 1239px) {
-      width: 62.21033868%;
+    @media (min-width: 769px) {
+      width: calc-percent(349, 561);
     }
   }
   &__subscribe-button {
@@ -882,7 +879,7 @@ h2 {
       align-items: unset;
     }
     @media (min-width: 1240px) {
-      width: 561px;
+      width: calc-percent(561, 1112);
     }
     @media (min-width: 769px) and (max-width: 1239px) {
       width: 50.449640288%;
