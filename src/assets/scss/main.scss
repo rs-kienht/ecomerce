@@ -153,34 +153,24 @@ h2 {
   }
 
   &__logo {
-    width: calc-percent(160, $container-pc);
-    line-height: 1;
-
-    img {
-      width: 100%;
-    }
-
-    @include mqMax($md) {
-      width: calc-percent(189, $bp - $padding-x-tl * 2);
-    }
-
-    @include mqMax($xs) {
-      width: calc-percent(126, $xsi - $padding-x-sp * 2);
-    }
-  }
-
-  &__nav-list {
-    margin-left: calc-percent(40, $container-pc);
+    font-family: $font-integral-cf;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 0.6875;
+    color: #000000;
     @media (max-width: 768px) {
-      display: none;
+      font-size: 25px;
+      line-height: 0.72;
     }
   }
-
   &__menu {
+    margin-left: calc-percent(40, $container-pc);
     display: flex;
     list-style: none;
     gap: 24px;
-
+    @media (max-width: 768px) {
+      display: none;
+    }
     @include mqMax($pc) {
       gap: 16px;
     }
@@ -686,10 +676,6 @@ h2 {
   }
 }
 .browes {
-  margin-top: 80px;
-  @media (max-width: 768px) {
-    margin-top: 0px;
-  }
   &__bg {
     background-color: #F0F0F0;
     border-radius: 40px;
@@ -835,7 +821,6 @@ h2 {
   }
   &__second {
     padding-top: 50px;
-    padding-bottom: 50px;
     background-color: #F0F0F0;
     border-bottom: 1px solid #0000001A;
     @media (max-width: 768px) {
