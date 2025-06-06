@@ -90,13 +90,13 @@ document.addEventListener('DOMContentLoaded', () => {
         390: {
           items: 1,
           fixedWidth: 358,
-          gutter: 0,
+          gutter: 24,
           edgePadding: 0,
         },
         1024: {
           edgePadding: 0,
           fixedWidth: 400,
-          gutter: 20,
+          gutter: 28,
           center: true,
         },
       },
