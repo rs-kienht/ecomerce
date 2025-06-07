@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOMContentLoaded');
     const swipArrivals = tns({
       container: '#products-arrivals',
       direction: 'horizontal',
@@ -30,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         750: {
           edgePadding: 0,
           fixedWidth: 295,
-          gutter: 20,
+          gutter: 16,
         },
       },
     });
@@ -48,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
       fixedWidth: 295,
       gutter: 20,
       center: true,
+      responsive: {
         320: {
           edgePadding: 0,
           fixedWidth: 198,
@@ -63,8 +63,9 @@ document.addEventListener('DOMContentLoaded', () => {
         750: {
           edgePadding: 0,
           fixedWidth: 295,
-          gutter: 20,
+          gutter: 16,
         },
+      }
     });
     const swiper = tns({
       container: '#promotion-slider',
@@ -107,5 +108,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('nextBtn').addEventListener('click', () => {
       swiper.goTo('next');
+    });
+    document.getElementById('signup-close').addEventListener('click', () => {
+      document.getElementById("signup").style.display = "none";
     });
   });
