@@ -31,6 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
           fixedWidth: 295,
           gutter: 16,
         },
+        1024: {
+          edgePadding: 0,
+          fixedWidth: 295,
+          gutter: 20,
+        },
       },
     });
     const swipSelling = tns({
@@ -65,6 +70,11 @@ document.addEventListener('DOMContentLoaded', () => {
           fixedWidth: 295,
           gutter: 16,
         },
+        1024: {
+          edgePadding: 0,
+          fixedWidth: 295,
+          gutter: 20,
+        },
       }
     });
     const swiper = tns({
@@ -85,19 +95,19 @@ document.addEventListener('DOMContentLoaded', () => {
           items: 1,
           edgePadding: 0,
           fixedWidth: 250,
-          gutter: 15,
+          gutter: 0,
           center: true,
         },
         390: {
           items: 1,
           fixedWidth: 358,
-          gutter: 24,
+          gutter: 0,
           edgePadding: 0,
         },
         1024: {
           edgePadding: 0,
           fixedWidth: 400,
-          gutter: 28,
+          gutter: 0,
           center: true,
         },
       },
