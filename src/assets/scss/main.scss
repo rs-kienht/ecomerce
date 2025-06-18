@@ -520,13 +520,13 @@ h2 {
     }
   }
   &__border {
-    margin-top: 64px;
+    padding-top: 64px;
+    border-top: 1px solid #0000001A;
     @media (max-width: 768px) {
       margin-top: 0px;
       padding-top: 40px;
       margin-left: 4.102564102%;
       margin-right: 4.102564102%;
-      border-top: 1px solid #0000001A;
     }
   }
   &__stat-text {
@@ -593,7 +593,6 @@ h2 {
   &__arrivals {
     padding-top: 72px;
     padding-bottom: 64px;
-    border-bottom: 1px solid #0000001A;
     @media (max-width: 768px) {
       padding-top: 50px;
       padding-bottom: 40px;
