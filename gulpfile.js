@@ -97,7 +97,7 @@ function serve(done) {
         ext: '.html',
       }),
     },
-    port: 3000,
+    port: 4000,
     open: true,
   });
   done();

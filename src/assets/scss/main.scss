@@ -41,7 +41,9 @@ h2 {
     font-size: 16px;
   }
 }
-
+.sortable-handler {
+  touch-action: none;
+}
 
 .inner {
   max-width: 1240px;
@@ -275,13 +277,13 @@ h2 {
 }
 
 .baner {
+  background-color: #f2f0f1;
   .inner {
     @media (max-width: 768px) {
       padding-left: 0;
       padding-right: 0;
     }
   }
-  background-color: #f2f0f1;
   &__background {
     padding: 103px 0px 116px;
     max-width: $lg;
@@ -482,7 +484,7 @@ h2 {
     transition: opacity 0.3s ease;
     margin: 0 calc-percent(24, $lgi);
     @media (max-width: 768px) {
-      margin: 0 calc-percent(51 / 2, $bp - $padding-x-tl * 2);
+      margin: 0 calc-percent(25, $bp - $padding-x-tl * 2);
   
     }
 
@@ -687,6 +689,46 @@ h2 {
   }
 }
 .browes {
+  &__item-first {
+    max-width: 360px;
+    background-image: url(/assets/images/Casual1.png);
+    @media (min-width: 769px) {
+      max-width: 260px;
+    }
+    @media (min-width: 1024px) {
+      max-width: 360px;
+    }
+    @media (min-width: 1280px) {
+      max-width: 407px;
+    }
+    @media (max-width: 650px) {
+      max-width: 100%;
+    }
+  }
+  &__item-second {
+    max-width: 684px;
+    background-image: url(/assets/images/Casual2.png);
+  }
+  &__item-thrid {
+    max-width: 684px;
+    background-image: url(/assets/images/Casual3.png);
+  }
+  &__item-fourth {
+    max-width: 360px;
+    background-image: url(/assets/images/Casual4.png);
+    @media (min-width: 769px) {
+      max-width: 260px;
+    }
+    @media (min-width: 1024px) {
+      max-width: 360px;
+    }
+    @media (min-width: 1280px) {
+      max-width: 407px;
+    }
+    @media (max-width: 650px) {
+      max-width: 100%;
+    }
+  }
   &__bg {
     background-color: #F0F0F0;
     border-radius: 40px;
@@ -696,21 +738,46 @@ h2 {
     }
   }
   &__row {
+    a {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.36111111111;
+      color: #000000;
+      padding: 25px 36px;
+      width: 100%;
+      border-radius: 20px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      @media (max-width: 650px) {
+        font-size: 24px;
+        line-height: 1.36111111111;
+        width: 100%;
+        height: 190px;
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
+        padding: 16px 24px;
+      }
+    }
     display: flex;
-    gap: calc-percent(20, $container-pc);
+    gap: 20px;
     @media (min-width: 769px) {
       height: 289px; 
     }
-    @media (max-width: 768px) {
-      display: flex;
-      flex-direction: column;
-      figure {
+    @media (min-width: 651px) and (max-width: 768px) {
+      height: 190px; 
+    }
+    @media (max-width: 650px) {
+      font-size: 24px;
+      line-height: 1.36111111111;
+      a {
         width: 100%;
         height: 190px;
       }
-      img {
-        width: 100%;
-      }
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
     }
     img {
       height: 100%;
