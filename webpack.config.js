@@ -44,7 +44,7 @@ export default {
             directory: path.resolve(path.dirname(new URL(import.meta.url).pathname), "htdocs"),  // Thư mục chứa các file tĩnh
         },
         compress: true,  // Bật nén file
-        port: 3000,  // Cổng mà dev server sẽ chạy
+        port: 4000,  // Cổng mà dev server sẽ chạy
         open: true,  // Tự động mở trình duyệt khi bắt đầu dev server
         hot: true,   // Hỗ trợ hot module replacement
     },
