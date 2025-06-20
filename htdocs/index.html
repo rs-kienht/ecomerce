@@ -6,17 +6,12 @@
     <title>Page</title>
     <link href="./assets/css/main.min.css" rel="stylesheet" >
     <link href="./assets/css/top.min.css" rel="stylesheet" >
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    >
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
-    >
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./libary/tiny-slider.css" />
+    <link rel="stylesheet" href="./libary/aos.css" />
+    <!-- JS -->
+    <script src="./libary/tiny-slider.js"></script>
+    <script src="./libary/aos.js"></script>
   </head>
 
   <body>
@@ -111,7 +106,7 @@
       </section>
       <section class="products">
         <div class="inner products__arrivals">
-          <h2 data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500" data-aos-easing="ease-in-out" class="title">NEW ARRIVALS</h2>
+          <h2 class="title">NEW ARRIVALS</h2>
           <ul class="products__list" id="products-arrivals">
             <li class="products__items-clothes">
               <a href="#" class="products__item">
@@ -189,11 +184,11 @@
               </a>
             </li>
           </ul>
-          <button onclick="goToPage()" class="products__view-all">
+          <button class="products__view-all">
             View All
           </button>
         </div>
-        <h2 data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500" data-aos-easing="ease-in-out" class="title inner products__border">TOP SELLING</h2>
+        <h2 class="title inner products__border">TOP SELLING</h2>
         <div class="inner products__selling">
           <ul class="products__list" id="products-selling">
             <li class="products__items-clothes">
@@ -284,7 +279,7 @@
       <section class="browes">
         <div class="inner">
           <div class="browes__bg">
-            <h2 data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500" data-aos-easing="ease-in-out" class="title browes__title">BROWSE BY dress STYLE</h2>
+            <h2 data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500" class="title browes__title">BROWSE BY dress STYLE</h2>
             <div class="browes__row">
                 <a href="#" class="browes__item-first">Casual</a>
                 <a href="#" class="browes__item-second">Formal</a>
@@ -590,14 +585,7 @@
       </div>
     </main>
     <!--#include virtual="/includes/footer.html" -->
-    <script>
-      AOS.init();
-      function goToPage() {
-        window.location.href = "https://example.com";
-      }
-
-    </script>
     <script src="assets/js/bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="../src/assets/js/main.js"></script>
   </body>
 </html>

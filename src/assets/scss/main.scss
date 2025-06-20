@@ -33,7 +33,7 @@ h2 {
     opacity: 0.7;
     background-color: $color-gray-1;
   }
-  @media (min-width: 550px) and (max-width: 767px) {
+  @media (min-width: 550px) and (max-width: 768px) {
     width: 30%!important;
   }
   @media (max-width: 768px) {
@@ -469,7 +469,7 @@ h2 {
       @media (max-width: 768px) {
         display: flex;
         padding: 0 calc-percent(32 * 1.5, $bp - $padding-x-tl * 2);
-        margin-top: 30px;
+        margin-top: 20px;
     
       }
 
@@ -518,6 +518,10 @@ h2 {
   &__border {
     padding-top: 64px;
     border-top: 1px solid #0000001A;
+    @media (max-width: 1279px) and (min-width: 768px) {
+      margin-left: 4.102564102%;
+      margin-right: 4.102564102%;
+    }
     @media (max-width: 768px) {
       margin-top: 0px;
       padding-top: 40px;
@@ -666,7 +670,7 @@ h2 {
     display: block;
     margin: 36px auto 0px auto;
     line-height: 1.375;
-    @media (min-width: 550px) and (max-width: 767px) {
+    @media (min-width: 550px) and (max-width: 768px) {
       width: 30%!important;
       margin-right: auto!important;
     }
@@ -1066,7 +1070,7 @@ h2 {
     border: 1px solid #0000001A;
     border-radius: 20px;
     min-width: 400px;
-    padding: 28px 32px 50px;
+    padding: 28px 32px 50px 32px!important;
     @media (max-width: 768px) {
       padding: 24px!important;
       min-width: auto;
