@@ -1036,6 +1036,7 @@ h2 {
     }
   }
   &__list {
+    overflow: hidden;
     @media (max-width: 768px) {
       padding-left: 4.102564102%;
       padding-right: 4.102564102%;
