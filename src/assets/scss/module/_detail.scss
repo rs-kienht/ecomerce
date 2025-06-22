@@ -44,7 +44,18 @@
 .detail {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 40px;
+    gap: calc-percent(40, $container-pc);
+    &__pic-only-wrap {
+        height: 100%;
+        img {
+            height: 100%;
+        }
+        @media (max-width: 1200px) {
+            img {
+                width: 100%;
+            }
+        }
+    }
     &__color-select {
         background-color: transparent;
         border: none;
@@ -61,6 +72,9 @@
         display: flex;
         flex-direction: row;
         gap: 14px;
+        @media (max-width: 1200px) {
+            flex-direction: column-reverse;
+        }
     }
     &__pic-list {
         display: flex;
@@ -69,6 +83,12 @@
         width: fit-content;
         align-items: center;
         gap: 14px;
+        @media (max-width: 1200px) {
+            flex-direction: column-reverse;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+        }
     }
     &__pic-item {
         padding : 0px;
@@ -85,6 +105,7 @@
         border-radius: 20px;
         width: 100%;
         min-height: 530px;
+        max-height: 530px;
     }
     &__content {
         h2 {
@@ -232,5 +253,57 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
+    }
+    &__item {
+        border: 1px solid #0000001A;
+        border-radius: 20px;
+        padding: 28px 32px;
+    }
+    &__date {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.375;
+        color: #00000099
+    }
+    &__desc {
+        margin-bottom: 24px;
+        margin-top: 12px;
+        font-size: 16px;
+        line-height: 1.375;
+        color: #00000099;
+    }
+    &__name {
+        margin-top: 19.5px;
+        align-items: center;
+        display: flex;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.1;
+        span {
+            margin-right: 4px;
+        }
+    }
+    &__list {
+        gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    &__load-more {
+        border: 1px solid #0000001A;
+        font-weight: 500;
+        font-size: 16px;
+        padding-left: calc-percent(45, $container-pc);
+        padding-right: calc-percent(45, $container-pc);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 62px;
+        background-color: white;
+        display: block;
+        margin: 36px auto 0px auto;
+        line-height: 1.375;
+    }
+    .products__arrivals {
+        padding-top: 64px;
+        padding-bottom: 0px;
     }
 }
