@@ -2,6 +2,29 @@
     duration: 1000,
     once: true // only run 1 short
   });
+const buttons = document.querySelectorAll('.detail__wrap-size button');
+buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active')); 
+      btn.classList.add('active');
+    });
+  });
+  const quantityEl = document.getElementById('quantity');
+  const decreaseBtn = document.getElementById('decrease');
+  const increaseBtn = document.getElementById('increase');
+
+  let quantity = 1;
+
+  increaseBtn.addEventListener('click', () => {
+    quantity++;
+    quantityEl.textContent = quantity;
+  });
+  decreaseBtn.addEventListener('click', () => {
+    if (quantity > 1) {
+      quantity--;
+      quantityEl.textContent = quantity;
+    }
+  });
 document.addEventListener('DOMContentLoaded', () => {
     const swipArrivals = tns({
       container: '#products-arrivals',
