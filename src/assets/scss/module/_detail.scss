@@ -48,6 +48,7 @@
     &__pic-only-wrap {
         height: 100%;
         img {
+            max-width: max-content;
             height: 100%;
         }
         @media (max-width: 1200px) {
@@ -130,7 +131,7 @@
     }
     &__desc {
         font-size: 16px;
-        line-height: 1.375;
+        line-height: 1.039;
         color: #00000099;
         margin-top: 25px;
         padding-bottom: 24px;
