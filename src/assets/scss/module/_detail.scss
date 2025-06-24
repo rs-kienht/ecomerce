@@ -45,6 +45,9 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: calc-percent(40, $container-pc);
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
     &__pic-only-wrap {
         height: 100%;
         img {
