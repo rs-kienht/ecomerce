@@ -2,8 +2,8 @@
     duration: 1000,
     once: true // only run 1 short
   });
-const buttons = document.querySelectorAll('.detail__wrap-size button');
-buttons.forEach(btn => {
+const buttonsNum = document.querySelectorAll('.detail__wrap-size button');
+buttonsNum.forEach(btn => {
     btn.addEventListener('click', () => {
       buttons.forEach(b => b.classList.remove('active')); 
       btn.classList.add('active');
@@ -25,6 +25,22 @@ buttons.forEach(btn => {
       quantityEl.textContent = quantity;
     }
   });
+const buttons = document.querySelectorAll('.detail__pic-item');
+const image = document.getElementById('displayImage');
+function changeImage(button) {
+      const imgUrl = button.getAttribute('data-img');
+      image.src = imgUrl;
+
+
+      buttons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+    }
+buttons.forEach(button => {
+      button.addEventListener('click', () => changeImage(button));
+    });
+    window.addEventListener('DOMContentLoaded', () => {
+      changeImage(buttons[0]);
+    });
 document.addEventListener('DOMContentLoaded', () => {
     const swipArrivals = tns({
       container: '#products-arrivals',
