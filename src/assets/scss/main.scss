@@ -977,7 +977,9 @@ h2 {
   }
   &__payment {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
   }
   &__wrap-all {
     display: flex;

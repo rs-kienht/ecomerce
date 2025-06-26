@@ -131,11 +131,19 @@
       min-height: 400px;
       max-height: 400px;
     }
+    @media screen and (max-width: 479px) {
+      min-height: 290px;
+      max-height: 290px;
+      background-color: #F0EEED;
+    }
   }
   &__content {
     h2 {
       font-size: 40px;
       line-height: 1.2;
+      span {
+        font-family: $font-satoshi!important;
+      }
       @media (max-width: 768px) {
         font-size: 24px;
         line-height: 1.16666666667;
@@ -212,7 +220,8 @@
   }
   &__wrap-size {
     display: flex;
-    gap: calc-percent(12, 600);
+    flex-wrap: wrap;
+    gap: 12px;
     padding-bottom: 24px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
     .active {
@@ -447,9 +456,10 @@
     margin-top: 80px;
     width: 100%;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     display: flex;
     align-items: center;
+    overflow-x: auto;
     @media (max-width: 768px) {
       margin-top: 50px;
     }
