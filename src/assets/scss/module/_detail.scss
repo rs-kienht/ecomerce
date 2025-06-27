@@ -16,12 +16,14 @@
     align-items: center;
   }
   &__item {
-    color: #00000099;
-    font-size: 16px;
-    line-height: 0.6875;
-    @media (max-width: 768px) {
-      font-size: 14px;
-      line-height: 0.71428571428;
+    a {
+      color: #00000099;
+      font-size: 16px;
+      line-height: 1.375;
+      @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 1.35714285714;
+      }
     }
   }
   &__item-active {
@@ -44,7 +46,7 @@
 .detail {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: calc-percent(40, $container-pc);
+  gap: 40px;
   @media (max-width: 768px) {
     gap: 20px;
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -179,9 +181,9 @@
   }
   &__desc {
     font-size: 16px;
-    line-height: 1.039;
+    line-height: 1.375;
     color: #00000099;
-    margin-top: 25px;
+    margin-top: 20px;
     padding-bottom: 24px;
     border-bottom: 1px solid #0000001a;
     @media (max-width: 768px) {
@@ -191,12 +193,10 @@
   &__stat {
     align-items: center;
     display: flex;
-    gap: 7px;
+    gap: 7.1px;
     margin-top: 14px;
-    margin-bottom: 14px;
     @media (max-width: 768px) {
       margin-top: 12px;
-      margin-bottom: 12px;
       svg {
         width: 18.67px;
         height: 18.67px;
@@ -205,7 +205,7 @@
     .products__stat-text {
       font-size: 16px;
       line-height: 1.375;
-      margin-left: 16px;
+      margin-left: 9px;
       @media (max-width: 768px) {
         font-size: 14px;
         line-height: 1.35714285714;
@@ -253,6 +253,7 @@
     }
   }
   &__add-cart {
+    border:none;
     height: 52px;
     font-weight: 500;
     font-size: 16px;
