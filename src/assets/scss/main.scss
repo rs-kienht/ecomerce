@@ -451,7 +451,7 @@ h2 {
 }
 .brands {
   background-color: $color-black;
-  padding: 44px 0px;
+  padding: 42px 0px;
   @media (max-width: 768px) {
     padding: 39px 0px;
 
@@ -480,6 +480,9 @@ h2 {
   &__item {
     transition: opacity 0.3s ease;
     margin: 0 calc-percent(24, $lgi);
+    img {
+      display: block;
+    }
     @media (max-width: 768px) {
       margin: 0 calc-percent(25, $bp - $padding-x-tl * 2);
   

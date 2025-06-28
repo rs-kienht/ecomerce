@@ -54,13 +54,7 @@
   &__pic-only-wrap {
     height: 100%;
     img {
-      max-width: max-content;
       height: 100%;
-    }
-    @media (max-width: 1200px) {
-      img {
-        width: 100%;
-      }
     }
   }
   &__color-select {
@@ -78,10 +72,9 @@
     font-size: 16px;
     color: #00000099;
     line-height: 0.6875;
-    margin-top: 14px;
+    margin-top: 24px;
     margin-bottom: 16px;
     @media (max-width: 768px) {
-      margin-top: 24px;
       font-size: 14px;
       line-height: 0.71428571428;
     }
@@ -92,7 +85,7 @@
     gap: 14px;
     @media (max-width: 1200px) {
       flex-direction: column-reverse;
-      justify-content: space-between;
+      justify-content: flex-end;
     }
   }
   &__pic-list {
@@ -119,6 +112,10 @@
     border-radius: 13px;
     overflow: hidden;
     aspect-ratio: 1 / 1;
+    @media (min-width: 769px) and (max-width: 1024px) {
+      min-height: 120px;
+      max-height: 120px;
+    }
   }
   &__pic-only {
     text-align: center;
@@ -128,6 +125,7 @@
     max-height: 530px;
     @media (min-width: 769px) and (max-width: 870px) {
       max-height: 460px;
+      min-height: 460px
     }
     @media (min-width: 871px) and (max-width: 1200px) {
       min-height: 400px;
@@ -181,7 +179,7 @@
   }
   &__desc {
     font-size: 16px;
-    line-height: 1.375;
+    line-height: 1.03125;
     color: #00000099;
     margin-top: 20px;
     padding-bottom: 24px;
@@ -195,8 +193,10 @@
     display: flex;
     gap: 7.1px;
     margin-top: 14px;
+    margin-bottom: 14.29px;
     @media (max-width: 768px) {
       margin-top: 12px;
+      gap: 5.36px;
       svg {
         width: 18.67px;
         height: 18.67px;
@@ -209,6 +209,7 @@
       @media (max-width: 768px) {
         font-size: 14px;
         line-height: 1.35714285714;
+        margin-left: 11px;
       }
     }
   }
@@ -224,6 +225,9 @@
     gap: 12px;
     padding-bottom: 24px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
+    @media (max-width: 768px) {
+      gap: 8px;
+    }
     .active {
       color: #ffffff;
       background-color: #000000 !important;
@@ -253,6 +257,7 @@
     }
   }
   &__add-cart {
+    padding: 0px;
     border:none;
     height: 52px;
     font-weight: 500;
@@ -265,6 +270,7 @@
     @media (max-width: 768px) {
       font-size: 14px;
       line-height: 1.375;
+      height: 44px;
     }
   }
   &__quality {
@@ -278,10 +284,13 @@
     align-items: center;
     justify-content: space-between;
     button {
+      padding: 0px;
       border: none;
       background-color: transparent;
     }
     @media (max-width: 768px) {
+      gap: 16px;
+      width: auto;
       padding: 12px 16px;
       font-size: 14px;
       line-height: 1.35714285714;
@@ -301,7 +310,23 @@
   }
 }
 .review {
+  &__dot {
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+  }
+  &__header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
   &__star {
+    line-height: 0;
+    svg {
+      width: 22.58px;
+      height: 22.58px;
+      display: inline-block;
+    }
     @media (max-width: 768px) {
       svg {
         width: 19.19px;
@@ -329,6 +354,8 @@
     }
   }
   &__latest {
+    display: flex;
+    align-items: center;
     padding: 13px 20px;
     font-weight: 500;
     font-size: 16px;
@@ -381,6 +408,10 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    @media (max-width: 768px) {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
   }
   &__item {
     border: 1px solid #0000001a;
@@ -410,7 +441,7 @@
     }
   }
   &__name {
-    margin-top: 19.5px;
+    margin-top: 15px;
     align-items: center;
     display: flex;
     font-weight: 700;
@@ -494,11 +525,17 @@
     border-color: transparent;
   }
 }
+.promotion {
   .products__arrivals {
+    padding-top: 64px;
     padding-bottom: 0px!important;
+    @media (max-width: 768px) {
+      padding-top: 50px;
+    }
   }
   .products__list {
     @media (max-width: 768px) {
       margin-top: 40px!important;
     }
   }
+}
