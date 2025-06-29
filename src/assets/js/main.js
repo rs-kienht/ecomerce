@@ -4,8 +4,8 @@
   });
 const buttonsNum = document.querySelectorAll('.detail__wrap-size button');
 buttonsNum.forEach(btn => {
-    btn.addEventListener('click', () => {
-      buttons.forEach(b => b.classList.remove('active')); 
+    btn?.addEventListener('click', () => {
+      buttonsNum.forEach(b => b.classList.remove('active')); 
       btn.classList.add('active');
     });
   });
@@ -15,11 +15,11 @@ buttonsNum.forEach(btn => {
 
   let quantity = 1;
 
-  increaseBtn.addEventListener('click', () => {
+  increaseBtn?.addEventListener('click', () => {
     quantity++;
     quantityEl.textContent = quantity;
   });
-  decreaseBtn.addEventListener('click', () => {
+  decreaseBtn?.addEventListener('click', () => {
     if (quantity > 1) {
       quantity--;
       quantityEl.textContent = quantity;
@@ -28,17 +28,19 @@ buttonsNum.forEach(btn => {
 const buttons = document.querySelectorAll('.detail__pic-item');
 const image = document.getElementById('displayImage');
 function changeImage(button) {
-      const imgUrl = button.getAttribute('data-img');
-      image.src = imgUrl;
+      const imgUrl = button?.getAttribute('data-img');
+      if(imgUrl) {
+        image.src = imgUrl;
+      }
 
 
-      buttons.forEach(btn => btn.classList.remove('active'));
-      button.classList.add('active');
+      buttons.forEach(btn => btn?.classList.remove('active'));
+      button?.classList.add('active');
     }
 buttons.forEach(button => {
-      button.addEventListener('click', () => changeImage(button));
+      button?.addEventListener('click', () => changeImage(button));
     });
-    window.addEventListener('DOMContentLoaded', () => {
+    window?.addEventListener('DOMContentLoaded', () => {
       changeImage(buttons[0]);
     });
 document.addEventListener('DOMContentLoaded', () => {
@@ -164,12 +166,12 @@ document.addEventListener('DOMContentLoaded', () => {
         },
       },
     });
-    document.getElementById('prevBtn').addEventListener('click', () => {
-      swiper.goTo('prev');
+    document?.getElementById('prevBtn')?.addEventListener('click', () => {
+      swiper?.goTo('prev');
     });
 
-    document.getElementById('nextBtn').addEventListener('click', () => {
-      swiper.goTo('next');
+    document?.getElementById('nextBtn')?.addEventListener('click', () => {
+      swiper?.goTo('next');
     });
     document.getElementById('signup-close').addEventListener('click', () => {
       document.getElementById("signup").style.display = "none";

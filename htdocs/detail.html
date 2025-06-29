@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta name="description" content="Chi tiết sản phẩm quần áo">
+  <meta name="keywords" content="quần áo, thời trang, nam, nữ, giá rẻ, mua sắm">
   <title>Detail</title>
   <link href="./assets/css/main.min.css" rel="stylesheet" />
   <link href="./assets/css/top.min.css" rel="stylesheet" />
@@ -60,24 +62,18 @@
         <div class="detail__pic">
           <div class="detail__pic-list">
             <button class="detail__pic-item" data-img="../assets/images/Detail1.png">
-              <figure>
                 <img src="../assets/images/Detail1.png" alt="Pic List 1" />
-              </figure>
             </button>
             <button class="detail__pic-item" data-img="../assets/images/Detail2.png">
-              <figure>
                 <img src="../assets/images/Detail2.png" alt="Pic List 2" />
-              </figure>
             </button>
             <button class="detail__pic-item" data-img="../assets/images/Detail3.png">
-              <figure>
                 <img src="../assets/images/Detail3.png" alt="Pic List 3" />
-              </figure>
             </button>
           </div>
           <div class="detail__pic-only">
             <figure class="detail__pic-only-wrap">
-              <img id="displayImage" src="" alt="Pic List 1" />
+              <img id="displayImage" src="" alt="Pic List 1"  data-aos="zoom-in"/>
             </figure>
           </div>
         </div>
@@ -498,12 +494,12 @@
       </section>
       <section class="products promotion">
         <div class="inner products__arrivals">
-          <h2 class="title">You might also like</h2>
+          <h2 data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500" class="title">You might also like</h2>
           <ul class="products__list" id="products-arrivals">
             <li class="products__items-clothes">
               <a href="#" class="products__item">
                 <figure>
-                  <img src="assets/images/Product Like.png" alt="Product1">
+                  <img src="assets/images/Product%20Like.png" alt="Product1">
                 </figure>
                 <p class="products__name">Polo with Contrast Trims</p>
                 <p class="products_stat">
@@ -538,7 +534,7 @@
             <li class="products__items-clothes">
               <a href="#" class="products__item">
                 <figure>
-                  <img src="assets/images/Product Like_2.png" alt="Product2">
+                  <img src="assets/images/Product%20Like_2.png" alt="Product2">
                 </figure>
                 <p class="products__name">Gradient Graphic T-shirt</p>
                 <p class="products_stat">
@@ -573,7 +569,7 @@
             <li class="products__items-clothes">
               <a href="#" class="products__item">
                 <figure>
-                  <img src="assets/images/Product Like_3.png" alt="Product3">
+                  <img src="assets/images/Product%20Like_3.png" alt="Product3">
                 </figure>
                 <p class="products__name">Polo with Tipping Details</p>
                 <p class="products_stat">
@@ -611,7 +607,7 @@
             <li class="products__items-clothes">
               <a href="#" class="products__item">
                 <figure>
-                  <img src="assets/images/Product Like_4.png" alt="Product4">
+                  <img src="assets/images/Product%20Like_4.png" alt="Product4">
                 </figure>
                 <p class="products__name">Black Striped T-shirt</p>
                 <p class="products_stat">
@@ -655,7 +651,7 @@
   </main>
   <!--#include virtual="/includes/footer.html" -->
   <script src="assets/js/bundle.min.js"></script>
-  <script type="module" src="../src/assets/js/main.js"></script>
+  <script type="module" src="../src/assets/js/detail.js"></script>
 </body>
 
 </html>
